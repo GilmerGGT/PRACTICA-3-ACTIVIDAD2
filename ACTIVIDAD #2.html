@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Maps</title>
+    <link rel="stylesheet" type="text/css" href="styless.css">
+</head>
+<body>
+    <header>
+        <h1>REGÍSTRATE A UN EVENTO</h1>
+        <p>Llena los siguientes datos para registrar tu dirección</p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form">
+                <h2>Insertar fecha</h2>
+                <form action="/submit-date" method="post">
+                    <label for="fecha">Escoja una fecha: </label>
+                    <input type="date" name="fecha" id="fecha" required>
+                </form>
+    
+                <h2>Tu dirección</h2>
+                <form id="direccionform">
+                    <label for="direccion">Dirección:</label>
+                    <textarea id="direccion" name="direccion" placeholder="Escribe tu dirección aquí" required></textarea>
+                    <input type="submit" value="Registrar dirección">
+                </form>
+            </div>
+            <div class="form2">
+                <h2>Nombres y Apellidos</h2>
+                <form2 id="nombreform2">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+                    <input type="submit" value="Registrar">
+                </form2>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div id="map" style="height: 600px; width: 100%;"></div>
+            <input class="input" type="text" id="place_input" placeholder="Ingresa una ubicación..."> 
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=initMap&libraries=places" async defer></script>
+</body>
+</html>

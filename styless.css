@@ -1,0 +1,127 @@
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #1c1c1c;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.form {
+    width: 48%;
+    padding: 30px;
+    background: #1c1c1c;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.form2 {
+    width: 48%;
+    padding: 30px;
+    background: #1c1c1c;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+    margin-bottom: 200px;
+    margin-left: 30px;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffcc00;
+    text-align: center;
+}
+
+.form2 h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffcc00;
+    text-align: center;
+}
+
+.form2 label {
+    font-size: 16px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form label {
+    font-size: 16px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.formulario input[type="text"],
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #ffcc00;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+.formulario input[type="submit"] {
+    background-color: #ffcc00;
+    color: #0d0d0d;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background: #ffe600;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        width: 90%;
+    }
+}
